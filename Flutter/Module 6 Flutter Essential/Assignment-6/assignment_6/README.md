@@ -1,7 +1,8 @@
 # assignment_6
 
 A new Flutter project.
-![Capture](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/8ed4ddc6-88eb-450a-9ff7-79711b794a9c)
+![Capture](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/1b5f8590-cc90-47c7-a892-3e6167e4fcb6)
+
 
 ## Getting Started
 
