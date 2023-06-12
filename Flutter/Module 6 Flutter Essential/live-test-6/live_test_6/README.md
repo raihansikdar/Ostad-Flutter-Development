@@ -1,7 +1,7 @@
 # live_test_6
 
 A new Flutter project.
-![Capture1](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/e1e275df-18a8-4389-9596-36f3cca45a88)
+
 
 ## Getting Started
 
