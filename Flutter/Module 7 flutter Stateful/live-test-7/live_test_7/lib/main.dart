@@ -1,7 +1,6 @@
-import 'package:assignment_7/pdf.dart';
 import 'package:flutter/material.dart';
 
-import 'product_list.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,16 +9,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
       theme: ThemeData(
+       
         primarySwatch: Colors.blue,
       ),
-      home:  PDFViewerPage(),
-    ); 
+      home: const HomePage(),
+    );
   }
 }
 
