@@ -1,6 +1,7 @@
 # weather_app
 
 A new Flutter project.
+![Capture](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/bd6a419d-1db9-4feb-9a72-31f45d44a730)
 
 ## Getting Started
 
