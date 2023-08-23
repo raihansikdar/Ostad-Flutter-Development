@@ -2,23 +2,22 @@ import 'package:flutter/material.dart';
 
 class MatchDetails extends StatelessWidget {
   const MatchDetails(
-      {Key? key,
-      required this.matchName,
+      {super.key,
+      this.matchName,
       required this.teamAScore,
       required this.teamBScore,
       required this.timeFirstPart,
       required this.timeLastPart,
-      required this.totalTimeFirstPart,
-      required this.totalTimeLastPart})
-      : super(key: key);
+      this.totalTime});
 
   final String? matchName;
   final int teamAScore;
   final int teamBScore;
   final int timeFirstPart;
-  final int timeLastPart;
-  final int totalTimeFirstPart;
-  final int totalTimeLastPart;
+  final String? timeLastPart;
+  final String? totalTime;
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +39,7 @@ class MatchDetails extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(teamAScore.toString(),style: const TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),
-                    const Text(" : ",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
+                    const Text(" : ",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),
                     Text(teamBScore.toString(),style: const TextStyle(fontSize: 28,fontWeight: FontWeight.bold),)
                   ],
                 ),
@@ -48,18 +47,20 @@ class MatchDetails extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Time : $timeFirstPart",style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
-                    const Text(":",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                    Text(timeLastPart.toString(),style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)
+                    const Text(":",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    Text("$timeLastPart",style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Total Time : $totalTimeFirstPart",style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
-                    const Text(":",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                    Text(totalTimeLastPart.toString(),style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)
-                  ],
-                ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("Total Time : ",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
+                      Text("$totalTime",style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)
+                    ],
+                  )
+
+
               ],
             ),
           ),

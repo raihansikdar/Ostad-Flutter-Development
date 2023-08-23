@@ -42,8 +42,7 @@ class HomePage extends StatelessWidget {
                                     teamBScore: snapshot.data!.docs[index]['team_b_score'],
                                     timeFirstPart: snapshot.data!.docs[index]['time_first_part'],
                                     timeLastPart: snapshot.data!.docs[index]['time_last_part'],
-                                    totalTimeFirstPart: snapshot.data!.docs[index]['total_time_first_part'],
-                                    totalTimeLastPart: snapshot.data!.docs[index]['total_time_last_part'],
+                                    totalTime: snapshot.data!.docs[index]['total_time']
                                   )));
                     },
                     title: Text(snapshot.data!.docs[index]['match_name'],style: Theme.of(context).textTheme.titleLarge,),
