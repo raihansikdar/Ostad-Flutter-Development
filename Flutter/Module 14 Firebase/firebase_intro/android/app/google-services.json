@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "806658623413",
+    "project_id": "fir-intro-1a035",
+    "storage_bucket": "fir-intro-1a035.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806658623413:android:0adf3c8e0b33203dae7bfc",
+        "android_client_info": {
+          "package_name": "com.ostad.firebase_intro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806658623413-3rrcb4tvvfb0rn3e6lt0eisr2onjesp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1EeGu2oTb_a1ghfYYU3_uyLGRIJwiUJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806658623413-3rrcb4tvvfb0rn3e6lt0eisr2onjesp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

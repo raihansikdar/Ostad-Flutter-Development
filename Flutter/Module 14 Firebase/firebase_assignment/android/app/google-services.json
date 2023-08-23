@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "207345745927",
+    "project_id": "fir-assignment-ostad",
+    "storage_bucket": "fir-assignment-ostad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207345745927:android:a97dfa08ecb922f672eaa2",
+        "android_client_info": {
+          "package_name": "com.firebaseostad.firebase_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207345745927-55n9snonv64p7qrjq581ne0necq561v3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_spcOzxZ0jPU4KtLE6MSeepu3mWyJ-JY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207345745927-55n9snonv64p7qrjq581ne0necq561v3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
