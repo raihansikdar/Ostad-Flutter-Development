@@ -14,7 +14,7 @@ class MatchDetails extends StatelessWidget {
   final int teamAScore;
   final int teamBScore;
   final int timeFirstPart;
-  final String? timeLastPart;
+  final int timeLastPart;
   final String? totalTime;
 
 
