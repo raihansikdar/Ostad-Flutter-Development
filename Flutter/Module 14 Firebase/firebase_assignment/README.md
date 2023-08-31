@@ -5,7 +5,7 @@ A new Flutter project.
 <<<<<<< HEAD
 =======
 ![Capture1](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/85cd967e-4f11-4020-a48d-b62ff9a01598)
-![Capture2](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/466dcefa-29de-4902-b523-c4a032ee92b1)
+![Capture2](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/505bfd81-c9ef-4010-ad11-541ae8013d5f)
 ![Capture3](https://github.com/raihansikdar/Ostad-Flutter-Development/assets/62495168/9b345ba8-08a7-47ee-bc26-02d3c88e8f98)
 
 
