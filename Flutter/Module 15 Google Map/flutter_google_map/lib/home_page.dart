@@ -10,27 +10,26 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   GoogleMapController? _googleMapController;
   final Location _location = Location();
-  LatLng _myCurrentLocation = const LatLng(23.808319312124283, 90.35984961499547);
+  LatLng _myCurrentLocation =
+      const LatLng(23.808319312124283, 90.35984961499547);
   final List<LatLng> _polylineCoordinates = [];
   final Set<Polyline> _polyLines = {};
   Marker _marker = const Marker(markerId: MarkerId('my_location'));
   bool isDrawing = false;
 
-
-
   void getLocation() {
     _location.onLocationChanged.listen((LocationData newLocation) {
-      _myCurrentLocation = LatLng(newLocation.latitude!, newLocation.longitude!);
+      _myCurrentLocation =
+          LatLng(newLocation.latitude!, newLocation.longitude!);
       if (isDrawing) {
         updatingPolyline();
       }
       updatingMarker();
       setState(() {});
     });
-    startLocationUpdates();
+    startForLocationUpdating();
   }
 
   @override
@@ -39,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     getLocation();
   }
 
-  void startLocationUpdates() async {
+  void startForLocationUpdating() async {
     if (await _location.serviceEnabled()) {
       _location.changeSettings(interval: 10000);
       _location.enableBackgroundMode(enable: true);
@@ -68,7 +67,7 @@ class _HomePageState extends State<HomePage> {
       infoWindow: InfoWindow(
         title: 'My current location',
         snippet:
-        '${_myCurrentLocation.latitude},${_myCurrentLocation.longitude}',
+            '${_myCurrentLocation.latitude},${_myCurrentLocation.longitude}',
       ),
       onTap: () {
         _googleMapController!
@@ -84,31 +83,33 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Real-Time Location Tracking'),
       ),
       body: GoogleMap(
-        onMapCreated: (GoogleMapController controller){
+        onMapCreated: (GoogleMapController controller) {
           _googleMapController = controller;
-
         },
-        initialCameraPosition: CameraPosition(target: _myCurrentLocation, zoom: 17),
-        markers: {_marker},
-        polylines: _polyLines,
+        initialCameraPosition:
+            CameraPosition(target: _myCurrentLocation, zoom: 16),
         myLocationEnabled: true,
         myLocationButtonEnabled: true,
+        markers: {_marker},
+        polylines: _polyLines,
       ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FloatingActionButton(
             onPressed: () {
-              isDrawing = true;
-              setState(() {});
+              setState(() {
+                isDrawing = true;
+              });
             },
             child: const Text("Start"),
           ),
           const SizedBox(width: 16),
           FloatingActionButton(
             onPressed: () {
-              isDrawing = false;
-              setState(() {});
+              setState(() {
+                isDrawing = false;
+              });
             },
             child: const Text("Stop"),
           ),
