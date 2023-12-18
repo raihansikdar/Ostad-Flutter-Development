@@ -168,21 +168,21 @@ class StreamBuilderHomePage extends StatefulWidget {
 class _StreamBuilderHomePageState extends State<StreamBuilderHomePage> {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-  // Future<void> getDataFromFirebase() async {
-  //   CollectionReference basketBallRef = firestore.collection('basketball');
-  //   final DocumentReference docReference = basketBallRef.doc('1_ban_vs_Ind');
-  //   final data = await docReference.get();
-  //   print("=============>");
-  //   print(data.data());
-  //   final teamName = data.get('team_a');
-  //   log(teamName);
-  // }
+  Future<void> getDataFromFirebase() async {
+    CollectionReference basketBallRef = firestore.collection('basketball');
+    final DocumentReference docReference = basketBallRef.doc('1_ban_vs_Ind');
+    final data = await docReference.get();
+    print("=============>");
+    print(data.data());
+    final teamName = data.get('team_a');
+    print(teamName);
+  }
 
-  // @override
-  // void initState() {
-  //   getDataFromFirebase();
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    getDataFromFirebase();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
